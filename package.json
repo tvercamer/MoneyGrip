@@ -3,7 +3,14 @@
   "private": true,
   "version": "0.1.0",
   "description": "A finance suite tailored to Flemish households.",
-  "keywords": ["finance", "household", "budget", "ledger", "investments", "subscriptions"],
+  "keywords": [
+    "finance",
+    "household",
+    "budget",
+    "ledger",
+    "investments",
+    "subscriptions"
+  ],
   "author": "Thomas Vercamer <moneygrip@my.karomas.be>",
   "type": "module",
   "packageManager": "pnpm@11.18.0",
@@ -11,6 +18,11 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "biome format --write .",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.7"
   }
 }
