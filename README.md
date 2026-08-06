@@ -1,6 +1,6 @@
 # MoneyGrip
 
-A finance suite targeted tailored to Flemish households.
+A finance suite tailored to Flemish households.
 
 > [!WARNING]
 > This project is under construction, and so is its documentation.

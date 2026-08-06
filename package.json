@@ -1,0 +1,16 @@
+{
+  "name": "moneygrip",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A finance suite tailored to Flemish households.",
+  "keywords": ["finance", "household", "budget", "ledger", "investments", "subscriptions"],
+  "author": "Thomas Vercamer <moneygrip@my.karomas.be>",
+  "type": "module",
+  "packageManager": "pnpm@11.18.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
