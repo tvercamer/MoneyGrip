@@ -1,0 +1,19 @@
+packages:
+  - "packages/*"
+  - "apps/*"
+
+allowBuilds:
+  esbuild: true
+strictPeerDependencies: true
+linkWorkspacePackages: false
+
+catalog:
+  "@types/react": 19.2.18
+  "@types/react-dom": 19.2.4
+  "@vitejs/plugin-react": 6.0.5
+  react: 19.2.8
+  react-dom: 19.2.8
+  typescript: 7.0.2
+  vite: 8.2.0
+  vite-plugin-dts: 5.0.3
+  vitest: 4.1.10
