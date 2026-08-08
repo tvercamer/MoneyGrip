@@ -2,7 +2,7 @@
 
 import {AppShell} from "@moneygrip/ui";
 import type {ReactNode} from "react";
-import {AppHeader} from "@/components/AppHeader";
+import {AppHeader} from "@/components/AppHeader/AppHeader";
 import {AppSidebar} from "@/components/AppSidebar";
 
 interface ShellProps {

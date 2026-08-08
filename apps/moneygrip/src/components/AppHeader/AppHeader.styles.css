@@ -1,0 +1,32 @@
+.toolNav {
+    display: flex;
+    gap: var(--moneygrip-space-1);
+    margin: calc(var(--moneygrip-space-3) * -1) calc(var(--moneygrip-space-6) * -1) var(--moneygrip-space-3);
+    overflow-x: auto;
+    border-bottom: 1px solid var(--moneygrip-color-border);
+    padding: 0 var(--moneygrip-space-6);
+    scrollbar-width: none;
+}
+
+.toolNav button {
+    flex: 0 0 auto;
+    min-height: 2.5rem;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    padding: 0 var(--moneygrip-space-3);
+    color: var(--moneygrip-color-text-muted);
+    background: transparent;
+    font-size: var(--moneygrip-font-size-2);
+    font-weight: var(--moneygrip-font-weight-medium);
+}
+
+.toolNav button[aria-current="page"] {
+    border-bottom-color: var(--moneygrip-color-accent);
+    color: var(--moneygrip-color-accent-text);
+    font-weight: var(--moneygrip-font-weight-semibold);
+}
+
+.toolNav button:disabled {
+    cursor: default;
+    opacity: 0.58;
+}
