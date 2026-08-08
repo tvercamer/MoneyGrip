@@ -1,7 +1,7 @@
 import type {LucideIcon} from "lucide-react";
 import {ChevronLeft, ChevronRight} from "lucide-react";
 import {type KeyboardEvent, type ReactNode, useId, useState} from "react";
-import {Button, ButtonLink, IconButton} from "./actions";
+import {Button, ButtonLink, IconButton} from "./buttons";
 import {Icon} from "./foundations";
 import styles from "./styles.module.css";
 import {cx} from "./utils";

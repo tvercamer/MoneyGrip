@@ -21,12 +21,12 @@ import {Bell, Download, Plus, Search} from "lucide-react";
 import {useState} from "react";
 
 const meta = {
-    title: "Components/Actions and forms",
+    title: "Components/Buttons and forms",
     parameters: {
         docs: {
             description: {
                 component:
-                    "Actions and fields use native controls, visible labels, clear focus states and application-provided text.",
+                    "Buttons and fields use native controls, visible labels, clear focus states and application-provided text.",
             },
         },
     },

@@ -2,7 +2,7 @@ import {MoneyGripI18nProvider} from "@moneygrip/i18n";
 import {render, screen} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import {describe, expect, it, vi} from "vitest";
-import {Button} from "./actions";
+import {Button} from "./buttons";
 import {Money} from "./finance";
 import {TextField} from "./forms";
 import {Tabs} from "./navigation";

@@ -1,6 +1,6 @@
 import "./styles.module.css";
 
-export * from "./actions";
+export * from "./buttons";
 export * from "./charts";
 export * from "./composition";
 export * from "./data-display";

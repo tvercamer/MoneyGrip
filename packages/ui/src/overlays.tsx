@@ -1,6 +1,6 @@
 import {ChevronDown, X} from "lucide-react";
 import {type MouseEvent as ReactMouseEvent, type ReactNode, useEffect, useId, useRef, useState} from "react";
-import {Button, IconButton} from "./actions";
+import {Button, IconButton} from "./buttons";
 import {Heading, Text} from "./foundations";
 import {Stack} from "./layout";
 import styles from "./styles.module.css";
