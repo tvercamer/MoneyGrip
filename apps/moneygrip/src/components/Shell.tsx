@@ -3,7 +3,7 @@
 import {AppShell} from "@moneygrip/ui";
 import type {ReactNode} from "react";
 import {AppHeader} from "@/components/AppHeader/AppHeader";
-import {AppSidebar} from "@/components/AppSidebar";
+import {AppSidebar} from "@/components/AppSidebar/AppSidebar";
 
 interface ShellProps {
     children: ReactNode;

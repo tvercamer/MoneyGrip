@@ -1,0 +1,6 @@
+.brandBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--moneygrip-space-3);
+}
