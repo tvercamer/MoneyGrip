@@ -1,0 +1,188 @@
+:where(:root, [data-moneygrip-theme="editorial"]) {
+    color-scheme: light;
+
+    --moneygrip-font-sans: "Source Sans 3 Variable", "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    --moneygrip-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+    --moneygrip-font-size-1: 0.75rem;
+    --moneygrip-font-size-2: 0.875rem;
+    --moneygrip-font-size-3: 1rem;
+    --moneygrip-font-size-4: 1.125rem;
+    --moneygrip-font-size-5: 1.375rem;
+    --moneygrip-font-size-6: 1.75rem;
+    --moneygrip-font-size-7: clamp(2rem, 4vw, 2.75rem);
+
+    --moneygrip-line-height-tight: 1.15;
+    --moneygrip-line-height-body: 1.5;
+    --moneygrip-line-height-relaxed: 1.65;
+    --moneygrip-font-weight-regular: 400;
+    --moneygrip-font-weight-medium: 500;
+    --moneygrip-font-weight-semibold: 600;
+
+    --moneygrip-space-0: 0;
+    --moneygrip-space-1: 0.25rem;
+    --moneygrip-space-2: 0.5rem;
+    --moneygrip-space-3: 0.75rem;
+    --moneygrip-space-4: 1rem;
+    --moneygrip-space-5: 1.25rem;
+    --moneygrip-space-6: 1.5rem;
+    --moneygrip-space-8: 2rem;
+    --moneygrip-space-10: 2.5rem;
+    --moneygrip-space-12: 3rem;
+    --moneygrip-space-16: 4rem;
+
+    --moneygrip-size-content: 76rem;
+    --moneygrip-size-control-sm: 2rem;
+    --moneygrip-size-control-md: 2.5rem;
+    --moneygrip-size-control-lg: 3rem;
+
+    --moneygrip-radius-sm: 0.375rem;
+    --moneygrip-radius-md: 0.625rem;
+    --moneygrip-radius-lg: 0.875rem;
+    --moneygrip-radius-round: 999rem;
+
+    --moneygrip-shadow-sm: 0 1px 2px rgb(28 37 38 / 0.05);
+    --moneygrip-shadow-md: 0 6px 24px rgb(28 37 38 / 0.08);
+    --moneygrip-shadow-overlay: 0 18px 50px rgb(28 37 38 / 0.18);
+
+    --moneygrip-duration-fast: 120ms;
+    --moneygrip-duration-normal: 180ms;
+    --moneygrip-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+
+    --moneygrip-color-canvas: #f2f3f3;
+    --moneygrip-color-surface: #fbfcfc;
+    --moneygrip-color-surface-raised: #ffffff;
+    --moneygrip-color-surface-subtle: #e9ebeb;
+    --moneygrip-color-surface-inverse: #1d2526;
+    --moneygrip-color-text: #1d2526;
+    --moneygrip-color-text-muted: #647073;
+    --moneygrip-color-text-subtle: #7b8587;
+    --moneygrip-color-text-inverse: #f6f8f7;
+    --moneygrip-color-border: #d5dbdc;
+    --moneygrip-color-border-strong: #aab5b7;
+    --moneygrip-color-input: #ffffff;
+    --moneygrip-color-backdrop: rgb(16 23 24 / 0.48);
+
+    --moneygrip-color-accent: #176b72;
+    --moneygrip-color-accent-hover: #105a60;
+    --moneygrip-color-accent-active: #0b4c52;
+    --moneygrip-color-accent-soft: #dbecee;
+    --moneygrip-color-accent-text: #0d4c52;
+    --moneygrip-color-on-accent: #ffffff;
+    --moneygrip-color-focus: #2e858d;
+
+    --moneygrip-color-positive: #2e7459;
+    --moneygrip-color-positive-soft: #dceee5;
+    --moneygrip-color-negative: #b54b45;
+    --moneygrip-color-negative-soft: #f7e2df;
+    --moneygrip-color-warning: #8a641d;
+    --moneygrip-color-warning-soft: #f6ebcf;
+    --moneygrip-color-info: #3e658a;
+    --moneygrip-color-info-soft: #dfebf4;
+
+    --moneygrip-color-chart-1: #1f737a;
+    --moneygrip-color-chart-2: #7192a3;
+    --moneygrip-color-chart-3: #b98c4b;
+    --moneygrip-color-chart-4: #9c778d;
+    --moneygrip-color-chart-5: #6b9473;
+    --moneygrip-color-chart-6: #c56f57;
+    --moneygrip-color-chart-7: #8179a5;
+    --moneygrip-color-chart-8: #4d8aa8;
+}
+
+:where(:root[data-moneygrip-color-mode="dark"], [data-moneygrip-theme="editorial"][data-moneygrip-color-mode="dark"]) {
+    color-scheme: dark;
+    --moneygrip-color-canvas: #151a1b;
+    --moneygrip-color-surface: #202728;
+    --moneygrip-color-surface-raised: #252d2e;
+    --moneygrip-color-surface-subtle: #1b2122;
+    --moneygrip-color-surface-inverse: #eef3f2;
+    --moneygrip-color-text: #eef3f2;
+    --moneygrip-color-text-muted: #a4b0b1;
+    --moneygrip-color-text-subtle: #889596;
+    --moneygrip-color-text-inverse: #172021;
+    --moneygrip-color-border: #364143;
+    --moneygrip-color-border-strong: #526063;
+    --moneygrip-color-input: #252d2e;
+    --moneygrip-color-backdrop: rgb(3 7 8 / 0.7);
+
+    --moneygrip-color-accent: #67b5bc;
+    --moneygrip-color-accent-hover: #79c3c9;
+    --moneygrip-color-accent-active: #8bced3;
+    --moneygrip-color-accent-soft: #263f42;
+    --moneygrip-color-accent-text: #a9d9dd;
+    --moneygrip-color-on-accent: #112829;
+    --moneygrip-color-focus: #8bced3;
+
+    --moneygrip-color-positive: #75bd99;
+    --moneygrip-color-positive-soft: #213b31;
+    --moneygrip-color-negative: #e37e77;
+    --moneygrip-color-negative-soft: #422a29;
+    --moneygrip-color-warning: #d9b76d;
+    --moneygrip-color-warning-soft: #403720;
+    --moneygrip-color-info: #8ab1d1;
+    --moneygrip-color-info-soft: #283a49;
+
+    --moneygrip-color-chart-1: #68b3ba;
+    --moneygrip-color-chart-2: #8aa9b7;
+    --moneygrip-color-chart-3: #d0a765;
+    --moneygrip-color-chart-4: #b38da3;
+    --moneygrip-color-chart-5: #87ad8e;
+    --moneygrip-color-chart-6: #da8c75;
+    --moneygrip-color-chart-7: #a39bc2;
+    --moneygrip-color-chart-8: #73a8c1;
+
+    --moneygrip-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.25);
+    --moneygrip-shadow-md: 0 8px 28px rgb(0 0 0 / 0.28);
+    --moneygrip-shadow-overlay: 0 20px 54px rgb(0 0 0 / 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+    :where(
+    :root:not([data-moneygrip-color-mode]),
+    :root[data-moneygrip-color-mode="system"],
+    [data-moneygrip-theme="editorial"]:not([data-moneygrip-color-mode]),
+    [data-moneygrip-theme="editorial"][data-moneygrip-color-mode="system"]
+  ) {
+        color-scheme: dark;
+        --moneygrip-color-canvas: #151a1b;
+        --moneygrip-color-surface: #202728;
+        --moneygrip-color-surface-raised: #252d2e;
+        --moneygrip-color-surface-subtle: #1b2122;
+        --moneygrip-color-surface-inverse: #eef3f2;
+        --moneygrip-color-text: #eef3f2;
+        --moneygrip-color-text-muted: #a4b0b1;
+        --moneygrip-color-text-subtle: #889596;
+        --moneygrip-color-text-inverse: #172021;
+        --moneygrip-color-border: #364143;
+        --moneygrip-color-border-strong: #526063;
+        --moneygrip-color-input: #252d2e;
+        --moneygrip-color-backdrop: rgb(3 7 8 / 0.7);
+        --moneygrip-color-accent: #67b5bc;
+        --moneygrip-color-accent-hover: #79c3c9;
+        --moneygrip-color-accent-active: #8bced3;
+        --moneygrip-color-accent-soft: #263f42;
+        --moneygrip-color-accent-text: #a9d9dd;
+        --moneygrip-color-on-accent: #112829;
+        --moneygrip-color-focus: #8bced3;
+        --moneygrip-color-positive: #75bd99;
+        --moneygrip-color-positive-soft: #213b31;
+        --moneygrip-color-negative: #e37e77;
+        --moneygrip-color-negative-soft: #422a29;
+        --moneygrip-color-warning: #d9b76d;
+        --moneygrip-color-warning-soft: #403720;
+        --moneygrip-color-info: #8ab1d1;
+        --moneygrip-color-info-soft: #283a49;
+        --moneygrip-color-chart-1: #68b3ba;
+        --moneygrip-color-chart-2: #8aa9b7;
+        --moneygrip-color-chart-3: #d0a765;
+        --moneygrip-color-chart-4: #b38da3;
+        --moneygrip-color-chart-5: #87ad8e;
+        --moneygrip-color-chart-6: #da8c75;
+        --moneygrip-color-chart-7: #a39bc2;
+        --moneygrip-color-chart-8: #73a8c1;
+        --moneygrip-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.25);
+        --moneygrip-shadow-md: 0 8px 28px rgb(0 0 0 / 0.28);
+        --moneygrip-shadow-overlay: 0 20px 54px rgb(0 0 0 / 0.5);
+    }
+}

@@ -1,0 +1,43 @@
+:where(html) {
+    font-family: var(--moneygrip-font-sans);
+    font-size: 100%;
+    line-height: var(--moneygrip-line-height-body);
+    color: var(--moneygrip-color-text);
+    background: var(--moneygrip-color-canvas);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+:where(body) {
+    color: var(--moneygrip-color-text);
+    background: var(--moneygrip-color-canvas);
+}
+
+:where(button, input, select, textarea) {
+    color: inherit;
+}
+
+:where(a) {
+    color: var(--moneygrip-color-accent-text);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
+}
+
+:where(:focus-visible) {
+    outline: 3px solid color-mix(in srgb, var(--moneygrip-color-focus) 58%, transparent);
+    outline-offset: 2px;
+}
+
+:where(::selection) {
+    color: var(--moneygrip-color-text);
+    background: var(--moneygrip-color-accent-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :where(*, *::before, *::after) {
+        scroll-behavior: auto;
+        transition-duration: 0.01ms;
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+    }
+}

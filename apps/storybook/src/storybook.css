@@ -1,0 +1,47 @@
+.moneygrip-story-surface {
+    min-height: 100vh;
+    padding: var(--moneygrip-space-6);
+}
+
+.story-section {
+    display: grid;
+    gap: var(--moneygrip-space-5);
+    max-width: 72rem;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: var(--moneygrip-space-4);
+}
+
+.story-narrow {
+    max-width: 34rem;
+}
+
+.story-swatch {
+    display: grid;
+    min-height: 6rem;
+    align-content: end;
+    border: 1px solid var(--moneygrip-color-border);
+    border-radius: var(--moneygrip-radius-md);
+    padding: var(--moneygrip-space-3);
+    color: var(--moneygrip-color-text);
+    background: var(--swatch-color);
+}
+
+.story-chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--moneygrip-space-4);
+}
+
+@media (max-width: 48rem) {
+    .moneygrip-story-surface {
+        padding: var(--moneygrip-space-4);
+    }
+
+    .story-chart-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "@moneygrip/typescript-config/react-library.json",
+  "include": [
+    "src",
+    "vite.config.ts"
+  ]
+}

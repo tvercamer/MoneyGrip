@@ -1,0 +1,10 @@
+{
+  "extends": "@moneygrip/typescript-config/react-app.json",
+  "include": [
+    ".storybook",
+    "e2e",
+    "playwright.config.ts",
+    "src",
+    "vitest.config.ts"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@moneygrip/storybook",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "storybook build",
+    "dev": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006",
+    "test": "vitest run --passWithNoTests",
+    "test:visual": "playwright test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@moneygrip/i18n": "workspace:*",
+    "@moneygrip/theme": "workspace:*",
+    "@moneygrip/ui": "workspace:*",
+    "lucide-react": "1.28.0",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@moneygrip/typescript-config": "workspace:*",
+    "@storybook/addon-a11y": "10.5.5",
+    "@storybook/addon-docs": "10.5.5",
+    "@storybook/addon-vitest": "10.5.5",
+    "@storybook/react-vite": "10.5.5",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "@vitest/browser-playwright": "4.1.10",
+    "@playwright/test": "1.62.1",
+    "storybook": "10.5.5",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}
