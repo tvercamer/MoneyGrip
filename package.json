@@ -13,7 +13,6 @@
   ],
   "author": "Thomas Vercamer <moneygrip@my.karomas.be>",
   "type": "module",
-  "packageManager": "pnpm@11.18.0",
   "engines": {
     "node": ">=22"
   },

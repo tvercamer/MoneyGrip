@@ -1,0 +1,36 @@
+{
+  "name": "moneygrip",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Thomas Vercamer <moneygrip@my.karomas.be>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write"
+  },
+  "dependencies": {
+    "@moneygrip/i18n": "workspace:*",
+    "@moneygrip/theme": "workspace:*",
+    "@moneygrip/ui": "workspace:*",
+    "lucide-react": "1.28.0",
+    "next": "16.3.0",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "babel-plugin-react-compiler": "1.0.0",
+    "react-server-dom-webpack": "19.2.6",
+    "typescript": "^5",
+    "vinext": "0.0.50",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}
