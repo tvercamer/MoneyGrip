@@ -1,7 +1,7 @@
 import type {LucideIcon} from "lucide-react";
 import {ChevronLeft, ChevronRight} from "lucide-react";
 import {type KeyboardEvent, type ReactNode, useId, useState} from "react";
-import {Button, IconButton, Link} from "./actions";
+import {Button, ButtonLink, IconButton} from "./actions";
 import {Icon} from "./foundations";
 import styles from "./styles.module.css";
 import {cx} from "./utils";
@@ -104,9 +104,9 @@ export function Breadcrumbs({"aria-label": ariaLabel, items}: BreadcrumbsProps) 
                     return (
                         <li className={styles.breadcrumbItem} key={item.href ?? String(item.label)}>
                             {item.href && !isCurrent ? (
-                                <Link href={item.href} subtle>
+                                <ButtonLink href={item.href} subtle>
                                     {item.label}
-                                </Link>
+                                </ButtonLink>
                             ) : (
                                 <span aria-current={isCurrent ? "page" : undefined}>{item.label}</span>
                             )}

@@ -1,18 +1,30 @@
+"use client";
+
+import {redirect, usePathname} from "next/navigation";
+import type {MouseEvent} from "react";
 import "./AppHeader.styles.css";
+import {MONEYGRIP_DEFAULT_TOOL, MONEYGRIP_TOOLS} from "@/options";
 
 export default function AppToolsNavigation() {
-    const MONEYGRIP_TOOLS = ["Ledger", "Subscriptions", "Budget", "Reports", "Other"];
+    const pathname = usePathname();
+
+    const handleClick = async (e: MouseEvent<HTMLElement>) => {
+        e.preventDefault();
+        const path = e.currentTarget.getAttribute("data-href") || MONEYGRIP_DEFAULT_TOOL.path;
+        redirect(path);
+    };
 
     return (
         <nav aria-label="MoneyGrip Tools" className="toolNav">
-            {MONEYGRIP_TOOLS.map((tool, idx) => (
+            {MONEYGRIP_TOOLS.map((tool) => (
                 <button
-                    key={idx}
-                    aria-current={tool === "Ledger" ? "page" : undefined}
-                    disabled={tool !== "Ledger"}
+                    aria-current={pathname.startsWith(tool.path) ? "page" : undefined}
+                    key={tool.path}
                     type="button"
+                    onClick={handleClick}
+                    data-href={tool.path}
                 >
-                    {tool}
+                    {tool.label}
                 </button>
             ))}
         </nav>

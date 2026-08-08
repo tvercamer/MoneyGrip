@@ -51,7 +51,7 @@ export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     subtle?: boolean;
 }
 
-export function Link({className, subtle = false, ...props}: LinkProps) {
+export function ButtonLink({className, subtle = false, ...props}: LinkProps) {
     return <a className={cx(styles.link, subtle && styles.linkSubtle, className)} {...props} />;
 }
 
