@@ -1,7 +1,7 @@
 {
   "extends": "@moneygrip/typescript-config/react-app.json",
   "include": [
-    ".storybook",
+    ".storybook/**.*",
     "e2e",
     "playwright.config.ts",
     "src",
