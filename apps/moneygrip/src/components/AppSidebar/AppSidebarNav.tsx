@@ -2,6 +2,8 @@
 
 import {SidebarNav} from "@moneygrip/ui";
 import {usePathname} from "next/navigation";
+import {useEffect, useState} from "react";
+import {useHash} from "@/hooks/useHash";
 import {
     MONEYGRIP_DEFAULT_TOOL,
     MONEYGRIP_LEDGER_TOOLS,
@@ -10,7 +12,13 @@ import {
 } from "@/options";
 
 export default function AppSidebarNav() {
+    const hash = useHash();
+    const [view, setView] = useState(hash);
     const pathname = usePathname();
+
+    useEffect(() => {
+        setView(hash);
+    }, [hash]);
 
     function getCurrentTool() {
         for (const tool of MONEYGRIP_TOOLS) {
@@ -35,13 +43,12 @@ export default function AppSidebarNav() {
     }
 
     const sidebarItems = getCurrentSidebarItems();
-    const view = "overview";
 
     return (
         <SidebarNav
             aria-label={`${currentTool.label}-navigatie`}
             items={sidebarItems.map((item) => ({
-                active: view === item.name,
+                active: view === `#${item.name}`,
                 href: item.path,
                 icon: item.icon,
                 label: item.label,
